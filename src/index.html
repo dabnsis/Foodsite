@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Food Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/e25ed0fa39c44d127ab5ab3e362d8af1?family=Cooper+Lt+BT+Light"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/LOGO 1.svg" />
+  </head>
+  <body>
+    <header class="max-w-7xl mx-auto">
+      <!-- Mobile Menu section start -->
+      <!-- top -->
+      <section class="flex justify-between lg:hidden p-4">
+        <figure class="flex justify-center items-center w-40 h-10">
+          <img src="images/LOGO 1.svg" alt="" />
+        </figure>
+        <figure
+          class="flex justify-center items-center border-l-2 border-l-FooterColor p-1 w-14 h-14"
+        >
+          <img src="images/HambergerMenu.svg" alt="" />
+        </figure>
+      </section>
+      <!-- User -->
+      <section class="grid grid-cols-12 lg:hidden">
+        <div
+          class="bg-Orange p-4 col-span-6 flex flex-row justify-center items-center gap-2"
+        >
+          <figure><img src="images/User.svg" alt="" /></figure>
+          <p class="font-semibold">Aycan</p>
+        </div>
+        <div
+          class="bg-Green p-4 col-span-6 flex flex-row justify-center items-center gap-2"
+        >
+          <figure><img src="images/Shopping Basket.svg" alt="" /></figure>
+          <p class="font-semibold text-white">GBP 79.89</p>
+        </div>
+      </section>
+
+      <!-- location -->
+      <section class="grid grid-cols-12 justify-between lg:hidden py-3">
+        <div class="col-span-6"></div>
+        <div class="col-span-6 flex flex-row justify-center items-center gap-2">
+          <img src="images/Location.svg" alt="" class="w-5 h-5" />
+          <p class="text-[12px]">Lution Street, N4G-00....</p>
+        </div>
+      </section>
+      <!-- Mobile Menu section end -->
+      <!-- top section -->
+      <section
+        class="hidden lg:grid grid-cols-12 justify-between bg-BannerBg rounded-br-xl rounded-bl-xl border-BorderColor/10 border-[1px]"
+      >
+        <!-- top right -->
+        <div
+          class="col-span-4 flex flex-row items-center justify-center gap-3 py-6"
+        >
+          <img src="images/Star.png" alt="" class="h-6 w-6" />
+          <p class="font-medium">
+            Get 5% Off your first order,
+            <span class="text-Orange font-bold underline">Promo: ORDER5</span>
+          </p>
+        </div>
+        <!-- top middle -->
+        <div class="col-span-4 flex flex-row items-center justify-center gap-3">
+          <img src="images/Location.svg" alt="" class="h-6 w-6" />
+          <p class="font-medium">
+            Regent Street, A4, A4201, London
+            <span class="text-Orange font-bold underline">Change Location</span>
+          </p>
+        </div>
+        <!-- top left -->
+        <div
+          class="col-span-4 bg-Green rounded-br-xl rounded-bl-xl flex flex-row"
+        >
+          <div
+            class="border-[1px] border-r-white w-full flex items-center justify-center"
+          >
+            <figure>
+              <img
+                src="images/Full Shopping Basket.svg"
+                alt=""
+                class="w-11 h-11"
+              />
+            </figure>
+          </div>
+          <div
+            class="border-2 border-r-white w-full flex items-center justify-center"
+          >
+            <p class="font-semibold text-white">23 Items</p>
+          </div>
+          <div
+            class="border-2 border-r-white w-full flex items-center justify-center"
+          >
+            <p class="font-semibold text-white">GBP 79.89</p>
+          </div>
+          <div
+            class="border-2 border-r-white w-full flex items-center justify-center"
+          >
+            <figure>
+              <img src="images/Forward Button.svg" alt="" class="w-9 h-9" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- nav section -->
+      <nav class="hidden lg:flex justify-between items-center my-10">
+        <figure>
+          <img src="images/LOGO 1.svg" alt="" class="w-52 h-12" />
+        </figure>
+        <div class="flex items-center justify-between gap-10">
+          <a
+            href="#"
+            class="hover:bg-Orange rounded-3xl px-3 py-2 hover:text-white font-medium"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="hover:bg-Orange rounded-3xl px-3 py-2 hover:text-white font-medium"
+          >
+            Browse Menu
+          </a>
+          <a
+            href="#"
+            class="hover:bg-Orange rounded-3xl px-3 py-2 hover:text-white font-medium"
+          >
+            Special Offers
+          </a>
+          <a
+            href="resturantDetails.html"
+            class="hover:bg-Orange rounded-3xl px-3 py-2 hover:text-white font-medium"
+          >
+            Restaurants
+          </a>
+          <a
+            href="#"
+            class="hover:bg-Orange rounded-3xl px-3 py-2 hover:text-white font-medium"
+          >
+            Track Order
+          </a>
+          <a
+            href="#"
+            class="bg-FooterBottomColor rounded-3xl px-6 py-3 text-white font-medium flex flex-row gap-3"
+          >
+            <figure>
+              <img src="images/Male User.svg" alt="" class="w-7 h-7" />
+            </figure>
+            <p>Login/Signup</p></a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto">
+      <!-- banner section -->
+      <section
+        class="bg-BannerBg rounded-xl border-BorderColor/20 border-[1px] flex flex-row gap-20 relative pt-6"
+      >
+        <!-- left section -->
+        <div
+          class="m-4 lg:m-0 w-full rounded-xl lg:rounded-none bg-black lg:bg-BannerBg text-white lg:text-black lg:w-6/12 flex flex-col justify-center gap-8 py-8 px-4 lg:p-6"
+        >
+          <div>
+            <p class="font-normal text-[12px] lg:text-base">
+              Order Restaurant food, takeaway and groceries.
+            </p>
+            <h3
+              class="font-semibold text-3xl lg:text-5xl text-center lg:text-left"
+            >
+              Feast Your Senses, <br />
+              <span class="text-Orange">Fast and Fresh</span>
+            </h3>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="text-center lg:text-left text-[12px] lg:text-base">
+              Enter a postcode to see what we deliver
+            </p>
+            <div
+              class="w-full lg:w-8/12 rounded-3xl bg-white border-BorderColor/20 border-[1px] flex justify-between"
+            >
+              <input
+                type="text"
+                placeholder="e.g. EC4R 3TE"
+                class="outline-none ml-3"
+              />
+              <button
+                class="hidden lg:block bg-Orange font-medium text-white rounded-3xl py-3 px-8"
+              >
+                Search
+              </button>
+              <button
+                class="lg:hidden bg-Orange font-medium text-white rounded-full py-1 px-1"
+              >
+                <img src="images/DownArrow.svg" alt="" class="w-8 h-8" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- right section -->
+        <div class="hidden lg:block w-6/12 relative">
+          <figure><img src="images/Banner-bg.svg" alt="" /></figure>
+          <figure class="absolute left-0 bottom-0 z-10">
+            <img src="images/BannerImage2.svg" alt="" />
+          </figure>
+          <!-- Notification-1  -->
+          <div
+            class="w-80 flex flex-col bg-white p-4 rounded-xl absolute top-20 right-36 z-20"
+          >
+            <div class="flex justify-between gap-2">
+              <figure>
+                <img src="images/LOGO 1.svg" alt="" class="w-16" />
+              </figure>
+              <p class="text-slate-400">now</p>
+            </div>
+            <p class="font-semibold text-xs">We’ve Received your order!</p>
+            <p class="font-normal text-xs">Awaiting Restaurant acceptance</p>
+          </div>
+          <!-- Notification-2  -->
+          <div
+            class="w-80 flex flex-col bg-white p-4 rounded-xl absolute top-56 right-6 z-30"
+          >
+            <div class="flex justify-between gap-2">
+              <figure>
+                <img src="images/LOGO 1.svg" alt="" class="w-16" />
+              </figure>
+              <p class="text-slate-400">now</p>
+            </div>
+            <p class="font-semibold text-xs">Order Accepted!</p>
+            <p class="font-normal text-xs">
+              Your order will be delivered shortly
+            </p>
+          </div>
+          <!-- Notification-3  -->
+          <div
+            class="w-80 flex flex-col bg-white p-4 rounded-xl absolute top-96 right-24 z-40"
+          >
+            <div class="flex justify-between gap-2">
+              <figure>
+                <img src="images/LOGO 1.svg" alt="" class="w-16" />
+              </figure>
+              <p class="text-slate-400">now</p>
+            </div>
+            <p class="font-semibold text-xs">Your riders near by</p>
+            <p class="font-normal text-xs">They are almost there get ready</p>
+          </div>
+        </div>
+        <!-- center image -->
+        <figure class="hidden lg:block absolute bottom-0 left-48">
+          <img src="images/BannerImage1.svg" alt="" class="" />
+        </figure>
+      </section>
+      <!-- exclusive deals section -->
+      <section>
+        <!-- nav section -->
+        <nav class="flex justify-between items-center my-10 px-1 lg:px-6">
+          <h3 class="font-bold text-[11px] lg:text-3xl">
+            Up to -40% 🎊 Order.uk exclusive deals
+          </h3>
+          <div class="hidden lg:flex items-center justify-between gap-10">
+            <a href="#" class="font-medium"> Vegan </a>
+            <a href="#" class="font-medium"> Sushi </a>
+            <a
+              href="#"
+              class="border-[1px] border-Orange rounded-3xl px-7 py-2 text-Orange font-medium"
+              >Pizza & Fast food
+            </a>
+            <a href="#" class="font-medium"> others </a>
+          </div>
+          <!-- mobile menu -->
+          <div
+            class="flex flex-row justify-center items-center gap-1 lg:gap-2 border-[1px] border-black rounded-full px-1 py-1 lg:hidden"
+          >
+            <img src="images/RightArrow.svg" alt="" class="w-4 h-4" />
+            <p class="text-[9px]">Pizza & Fast Food</p>
+          </div>
+        </nav>
+        <!-- menu section -->
+        <section class="grid grid-cols-12 gap-1 lg:gap-4 mb-10 p-1 lg:p-0">
+          <!-- menu-1 -->
+          <div class="col-span-4 flex flex-col gap-2 relative">
+            <figure><img src="images/ExclusiveDeals1.svg" alt="" /></figure>
+            <div class="lg:absolute left-10 bottom-8">
+              <p class="text-Orange font-medium text-[13px] lg:text-xl">
+                Restaurant
+              </p>
+              <h3
+                class="text-black lg:text-white font-bold text-sm lg:text-2xl"
+              >
+                Chef Burgers London
+              </h3>
+            </div>
+            <div
+              class="bg-black rounded-br-lg rounded-bl-lg w-10 lg:w-20 p-1 lg:p-3 absolute top-0 right-7"
+            >
+              <p
+                class="font-bold text-[12px] lg:text-xl text-white text-center"
+              >
+                -40%
+              </p>
+            </div>
+          </div>
+          <!-- menu-2 -->
+          <div class="col-span-4 flex flex-col gap-2 relative">
+            <figure><img src="images/ExclusiveDeals2.svg" alt="" /></figure>
+            <div class="lg:absolute left-10 bottom-8">
+              <p class="text-Orange font-medium text-[13px] lg:text-xl">
+                Restaurant
+              </p>
+              <h3
+                class="text-black lg:text-white font-bold text-sm lg:text-2xl"
+              >
+                Grand Ai Cafe London
+              </h3>
+            </div>
+            <div
+              class="bg-black rounded-br-lg rounded-bl-lg w-10 lg:w-20 p-1 lg:p-3 absolute top-0 right-7"
+            >
+              <p
+                class="font-bold text-[12px] lg:text-xl text-white text-center"
+              >
+                -40%
+              </p>
+            </div>
+          </div>
+          <!-- menu-3 -->
+          <div class="col-span-4 flex flex-col gap-2 relative">
+            <figure><img src="images/ExclusiveDeals3.svg" alt="" /></figure>
+            <div class="lg:absolute left-10 bottom-8">
+              <p class="text-Orange font-medium text-[13px] lg:text-xl">
+                Restaurant
+              </p>
+              <h3
+                class="text-black lg:text-white font-bold text-sm lg:text-2xl"
+              >
+                Butterbrot Caf’e London
+              </h3>
+            </div>
+            <div
+              class="bg-black rounded-br-lg rounded-bl-lg w-10 lg:w-20 p-1 lg:p-3 absolute top-0 right-7"
+            >
+              <p
+                class="font-bold text-[12px] lg:text-xl text-white text-center"
+              >
+                -40%
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Popular category section -->
+      <section
+        class="bg-FooterColor/50 lg:bg-white p-1 lg:p-0 rounded-xl lg:rounded-none"
+      >
+        <!-- heading -->
+        <div class="my-4 lg:my-10 px-6">
+          <h3 class="font-bold text-base lg:text-3xl">
+            Order.uk Popular Categories 🤩
+          </h3>
+        </div>
+        <!-- category -->
+        <section class="grid grid-cols-12 gap-3 mb-10 p-1 lg:p-0">
+          <!-- item-1 -->
+          <div class="col-span-6 lg:col-span-2 rounded-xl">
+            <figure><img src="images/PopularCategory1.svg" alt="" /></figure>
+            <div
+              class="bg-black lg:bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl"
+            >
+              <h3
+                class="text-Orange lg:text-black font-bold text-[13] lg:text-base"
+              >
+                Burgers
+              </h3>
+              <p
+                class="text-[13] lg:text-sm text-white lg:text-Orange font-normal"
+              >
+                21 Restaurants
+              </p>
+            </div>
+          </div>
+          <!-- item-2 -->
+          <div class="col-span-6 lg:col-span-2 rounded-xl">
+            <figure><img src="images/PopularCategory2.svg" alt="" /></figure>
+            <div
+              class="bg-black lg:bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl"
+            >
+              <h3
+                class="text-Orange lg:text-black font-bold text-[13] lg:text-base"
+              >
+                Salads
+              </h3>
+              <p
+                class="text-[13] lg:text-sm text-white lg:text-Orange font-normal"
+              >
+                32 Restaurants
+              </p>
+            </div>
+          </div>
+          <!-- item-3 -->
+          <div class="col-span-6 lg:col-span-2 rounded-xl">
+            <figure><img src="images/PopularCategory3.svg" alt="" /></figure>
+            <div
+              class="bg-black lg:bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl"
+            >
+              <h3
+                class="text-Orange lg:text-black font-bold text-[13] lg:text-base"
+              >
+                Pasta & Casuals
+              </h3>
+              <p
+                class="text-[13] lg:text-sm text-white lg:text-Orange font-normal"
+              >
+                4 Restaurants
+              </p>
+            </div>
+          </div>
+          <!-- item-4 -->
+          <div class="col-span-6 lg:col-span-2 rounded-xl">
+            <figure><img src="images/PopularCategory4.svg" alt="" /></figure>
+            <div
+              class="bg-black lg:bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl"
+            >
+              <h3
+                class="text-Orange lg:text-black font-bold text-[13] lg:text-base"
+              >
+                Pizza
+              </h3>
+              <p
+                class="text-[13] lg:text-sm text-white lg:text-Orange font-normal"
+              >
+                32 Restaurants
+              </p>
+            </div>
+          </div>
+          <!-- item-5 -->
+          <div class="col-span-6 lg:col-span-2 rounded-xl">
+            <figure><img src="images/PopularCategory5.svg" alt="" /></figure>
+            <div
+              class="bg-black lg:bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl"
+            >
+              <h3
+                class="text-Orange lg:text-black font-bold text-[13] lg:text-base"
+              >
+                Breakfast
+              </h3>
+              <p
+                class="text-[13] lg:text-sm text-white lg:text-Orange font-normal"
+              >
+                4 Restaurants
+              </p>
+            </div>
+          </div>
+          <!-- item-6 -->
+          <div class="col-span-6 lg:col-span-2 rounded-xl">
+            <figure><img src="images/PopularCategory6.svg" alt="" /></figure>
+            <div
+              class="bg-black lg:bg-PopCatBg py-2 px-3 rounded-br-xl rounded-bl-xl"
+            >
+              <h3
+                class="text-Orange lg:text-black font-bold text-[13] lg:text-base"
+              >
+                Soups
+              </h3>
+              <p
+                class="text-[13] lg:text-sm text-white lg:text-Orange font-normal"
+              >
+                32 Restaurants
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- Popular Restaurants section -->
+      <section>
+        <!-- heading -->
+        <div class="my-4 lg:my-10 px-2 lg:px-6">
+          <h3 class="font-bold text-base lg:text-3xl">Popular Restaurants</h3>
+        </div>
+        <!-- restaurant name -->
+        <section class="grid grid-cols-12 gap-1 lg:gap-3 mb-10 p-1 lg:p-0">
+          <!-- item-1 -->
+          <div class="col-span-2 rounded-xl">
+            <figure><img src="images/McDonald’s London.svg" alt="" /></figure>
+          </div>
+          <!-- item-2 -->
+          <div class="col-span-2 rounded-xl">
+            <figure><img src="images/Papa Johns.svg" alt="" /></figure>
+          </div>
+          <!-- item-3 -->
+          <div class="col-span-2 rounded-xl">
+            <figure><img src="images/KFC West London.svg" alt="" /></figure>
+          </div>
+          <!-- item-4 -->
+          <div class="col-span-2 rounded-xl">
+            <figure><img src="images/Texas Chicken.svg" alt="" /></figure>
+          </div>
+          <!-- item-5 -->
+          <div class="col-span-2 rounded-xl">
+            <figure><img src="images/Burger King.svg" alt="" /></figure>
+          </div>
+          <!-- item-6 -->
+          <div class="col-span-2 rounded-xl">
+            <figure><img src="images/Shaurma.svg" alt="" /></figure>
+          </div>
+        </section>
+      </section>
+
+      <!-- Apps section -->
+      <section
+        class="flex flex-col gap-3 lg:block bg-FooterMainColor rounded-xl lg:bg-white my-10 relative pt-4 px-4 lg:p-0 mx-2 lg:mx-0"
+      >
+        <div class="grid grid-cols-12 rounded-xl bg-FooterMainColor">
+          <div class="hidden lg:block col-span-4"></div>
+          <!-- right section -->
+          <div
+            class="col-span-full lg:col-span-8 flex flex-col justify-center items-center gap-4 lg:gap-6 py-0 lg:py-24"
+          >
+            <div class="lg:flex lg:flex-row lg:justify-center lg:items-center">
+              <figure class="hidden lg:block">
+                <img src="images/LOGO 1.svg" alt="" />
+              </figure>
+              <h2 class="w-full text-3xl lg:text-7xl font-bold">
+                <span class="text-3xl lg:hidden font-bold">Order </span>ing is
+                more
+              </h2>
+            </div>
+            <div
+              class="bg-FooterMainColor lg:bg-black rounded-full py-2 pl-0 lg:pl-44 pr-0 lg:pr-8 flex flex-row items-center justify-center gap-3"
+            >
+              <p class="text-Orange text-2xl lg:text-6xl font-medium underline">
+                Personalised
+              </p>
+              <span
+                class="text-black lg:text-white text-2xl lg:text-6xl font-medium"
+                >& Instant</span
+              >
+            </div>
+            <h4 class="text-[13px] lg:text-2xl font-normal">
+              Download the Order.uk app for faster ordering
+            </h4>
+            <div class="flex">
+              <figure><img src="images/AppStore.svg" alt="" /></figure>
+              <figure><img src="images/PlayStore.svg" alt="" /></figure>
+            </div>
+          </div>
+        </div>
+        <!-- image section -->
+        <figure class="lg:absolute lg:-bottom-16 lg:left-4">
+          <img
+            src="images/BannerImageForApp.svg"
+            alt=""
+            class="w-[3000px] h-[300px] lg:w-[600px] lg:h-[600px]"
+          />
+        </figure>
+      </section>
+
+      <!-- Partner and Ride section -->
+      <section
+        class="my-10 grid grid-cols-1 lg:grid-cols-12 gap-8 mx-2 lg:mx-0"
+      >
+        <!-- Partner -->
+        <div class="col-span-6 relative">
+          <figure><img src="images/PartnerImage.svg" alt="" /></figure>
+          <div class="absolute left-10 bottom-8 flex flex-col gap-1 lg:gap-6">
+            <div>
+              <p class="text-Orange font-medium text-sm lg:text-xl">
+                Signup as a business
+              </p>
+              <h3 class="font-bold text-white text-base lg:text-2xl">
+                Partner with us
+              </h3>
+            </div>
+            <button
+              class="w-3/4 lg:w-full bg-Orange font-medium text-white rounded-3xl py-1 px-1 lg:py-3 lg:px-8 text-[11px] lg:text-base"
+            >
+              Get Started
+            </button>
+          </div>
+
+          <div
+            class="bg-white rounded-br-lg rounded-bl-lg p-2 lg:p-3 absolute top-0 left-10"
+          >
+            <p class="font-bold text-[10px] lg:text-xl text-center">
+              Earn more with lower fees
+            </p>
+          </div>
+        </div>
+        <!-- Rider -->
+        <div class="col-span-6 relative">
+          <figure><img src="images/RiderImage.svg" alt="" /></figure>
+          <div class="absolute left-10 bottom-8 flex flex-col gap-1 lg:gap-6">
+            <div>
+              <p class="text-Orange font-medium text-sm lg:text-xl">
+                Signup as a rider
+              </p>
+              <h3 class="font-bold text-white text-base lg:text-2xl">
+                Ride with us
+              </h3>
+            </div>
+            <button
+              class="w-3/4 lg:w-full bg-Orange font-medium text-white rounded-3xl py-1 px-1 lg:py-3 lg:px-8 text-[11px] lg:text-base"
+            >
+              Get Started
+            </button>
+          </div>
+
+          <div
+            class="bg-white rounded-br-lg rounded-bl-lg p-2 lg:p-3 absolute top-0 left-10"
+          >
+            <p class="font-bold text-[10px] lg:text-xl text-center">
+              Avail exclusive perks
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Know more about us! -->
+      <section
+        class="bg-white lg:bg-FooterColor my-10 py-4 lg:py-20 rounded-xl"
+      >
+        <!-- questions nav section -->
+        <nav
+          class="max-w-6xl mx-auto flex justify-center lg:justify-between items-center p-2 lg:pt-20 lg:pb-10 lg:px-6"
+        >
+          <h3 class="font-bold text-center text-xl lg:text-3xl">
+            Know more about us!
+          </h3>
+          <div class="hidden lg:flex items-center justify-between gap-10">
+            <a
+              href="#"
+              class="border-[1px] hover:border-Orange rounded-3xl px-2 py-2 text-black hover:font-bold"
+              >Frequent Questions
+            </a>
+            <a
+              href="#"
+              class="border-[1px] hover:border-Orange rounded-3xl px-2 py-2 text-black hover:font-bold"
+            >
+              Who we are?
+            </a>
+            <a
+              href="#"
+              class="border-[1px] hover:border-Orange rounded-3xl px-2 py-2 text-black hover:font-bold"
+            >
+              Partner Program
+            </a>
+            <a
+              href="#"
+              class="border-[1px] hover:border-Orange rounded-3xl px-2 py-2 text-black hover:font-bold"
+            >
+              Help & Support
+            </a>
+          </div>
+        </nav>
+        <!-- How it works section -->
+        <div
+          class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 justify-center items-center bg-white px-1 lg:px-6 py-8 rounded-xl"
+        >
+          <div class="col-span-full lg:col-span-4 flex flex-col">
+            <a
+              class="hover:bg-Orange font-bold rounded-3xl py-3 px-8 text-center text-[13px] lg:text-base"
+            >
+              How does Order.UK work?
+            </a>
+            <a
+              class="hover:bg-Orange font-bold rounded-3xl py-3 px-8 text-center text-[13px] lg:text-base"
+            >
+              What payment methods are accepted?
+            </a>
+            <a
+              class="hover:bg-Orange font-bold rounded-3xl py-3 px-8 text-center text-[13px] lg:text-base"
+            >
+              Can I track my order in real-time?
+            </a>
+            <a
+              class="hover:bg-Orange font-bold rounded-3xl py-3 px-8 text-center text-[13px] lg:text-base"
+            >
+              Are there any special discounts orpromotions available?
+            </a>
+            <a
+              class="hover:bg-Orange font-bold rounded-3xl py-3 px-8 text-center text-[13px] lg:text-base"
+            >
+              Is Order.UK available in my area?
+            </a>
+          </div>
+          <div
+            class="col-span-full lg:col-span-8 flex flex-col gap-7 mx-2 lg:mx-0 bg-black lg:bg-white p-8 lg:p-0 rounded-xl lg:rounded-none"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-3">
+              <!-- place an order -->
+              <div
+                class="col-span-4 bg-FooterColor flex flex-col justify-center items-center gap-2 rounded-xl p-4"
+              >
+                <h3 class="font-bold text-xl">Place an Order!</h3>
+                <figure><img src="images/PlaceOrder.svg" alt="" /></figure>
+                <p class="font-medium text-center">
+                  Place order through ourwebsite or Mobile app
+                </p>
+              </div>
+              <!-- Track Progress -->
+              <div
+                class="col-span-4 bg-FooterColor flex flex-col justify-center items-center gap-2 rounded-xl p-4"
+              >
+                <h3 class="font-bold text-xl">Track Progress</h3>
+                <figure><img src="images/TrackOrder.svg" alt="" /></figure>
+                <p class="font-medium text-center">
+                  Your can track your orderstatus with delivery time
+                </p>
+              </div>
+              <!-- Get your Order! -->
+              <div
+                class="col-span-4 bg-FooterColor flex flex-col justify-center items-center gap-2 rounded-xl p-4"
+              >
+                <h3 class="font-bold text-xl">Get your Order!</h3>
+                <figure><img src="images/GetOrder.svg" alt="" /></figure>
+                <p class="font-medium text-center">
+                  Receive your order at alighting fast speed!
+                </p>
+              </div>
+            </div>
+            <div>
+              <p class="text-center text-white lg:text-black">
+                Order.UK simplifies the food ordering process. Browse through
+                our diverse menu, <br />
+                select your favorite dishes, and proceed to checkout. Your
+                delicious meal will be <br />
+                on its way to your doorstep in no time!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Statics section -->
+      <section class="bg-Orange rounded-xl p-6 my-10 mx-4 lg:mx-0">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-0">
+          <!-- Registered Riders -->
+          <div
+            class="col-span-3 lg:border-r-[1px] border-b-[1px] lg:border-b-0 pb-8 lg:pb-0 border-FooterColor flex flex-col justify-center items-center"
+          >
+            <h1 class="text-6xl font-light text-white">546+</h1>
+            <p class="text-2xl font-bold text-white">Registered Riders</p>
+          </div>
+          <!-- Orders Delivered -->
+          <div
+            class="col-span-3 border-b-[1px] lg:border-b-0 lg:border-r-[1px] pb-8 lg:pb-0 border-FooterColor flex flex-col justify-center items-center"
+          >
+            <h1 class="text-6xl font-light text-white">789,900+</h1>
+            <p class="text-2xl font-bold text-white">Orders Delivered</p>
+          </div>
+          <!-- Restaurants Partnered-->
+          <div
+            class="col-span-3 lg:border-r-[1px] border-b-[1px] lg:border-b-0 pb-8 lg:pb-0 border-FooterColor flex flex-col justify-center items-center"
+          >
+            <h1 class="text-6xl font-light text-white">690+</h1>
+            <p class="text-[23px] lg:text-2xl font-bold text-white">
+              Restaurants Partnered
+            </p>
+          </div>
+          <!-- Food items-->
+          <div class="col-span-3 flex flex-col justify-center items-center">
+            <h1 class="text-6xl font-light text-white">17,457+</h1>
+            <p class="text-2xl font-bold text-white">Food items</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer section -->
+    <footer class="bg-FooterMainColor">
+      <section
+        class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 px-4 lg:px-0 py-20"
+      >
+        <!-- play store app store -->
+        <div
+          class="col-span-full lg:col-span-4 flex flex-col justify-center lg:justify-normal items-center lg:items-start gap-5"
+        >
+          <figure><img src="images/LOGO 2.svg" alt="" /></figure>
+          <div class="flex flex-row">
+            <figure><img src="images/AppStore.svg" alt="" /></figure>
+            <figure><img src="images/PlayStore.svg" alt="" /></figure>
+          </div>
+          <p class="font-normal lg:text-left text-center">
+            Company # 490039-445, Registered withHouse of companies.
+          </p>
+        </div>
+        <!-- inbox field -->
+        <div
+          class="col-span-full lg:col-span-4 flex flex-col justify-center items-center lg:justify-normal lg:items-start gap-5"
+        >
+          <h1 class="text-base lg:text-xl font-bold">
+            Get Exclusive Deals in your Inbox
+          </h1>
+          <div class="rounded-3xl bg-FooterColor flex justify-between">
+            <input
+              type="text"
+              placeholder="youremail@gmail.com"
+              class="outline-none ml-3 bg-FooterColor"
+            />
+            <button
+              class="bg-Orange font-medium text-white rounded-3xl py-3 px-8"
+            >
+              Subscribe
+            </button>
+          </div>
+          <p class="text-sm">
+            we wont spam, read our <a href="" class="underline">email policy</a>
+          </p>
+          <div class="flex flex-row gap-2">
+            <img src="images/Facebook.svg" alt="" />
+            <img src="images/Instagram.svg" alt="" />
+            <img src="images/TikTok.svg" alt="" />
+            <img src="images/Snapchat.svg" alt="" />
+          </div>
+        </div>
+        <!-- Legal Pages -->
+        <div class="col-span-full lg:col-span-2 flex flex-col gap-5">
+          <h1 class="text-xl font-bold">Legal Pages</h1>
+          <a href="#" class="underline">Terms and conditions</a>
+          <a href="#" class="underline">Privacy</a>
+          <a href="#" class="underline">Cookies</a>
+          <a href="#" class="underline">Modern Slavery Statement</a>
+        </div>
+        <!-- Important Links -->
+        <div class="col-span-full lg:col-span-2 flex flex-col gap-5">
+          <h1 class="text-xl font-bold">Important Links</h1>
+          <a href="#" class="underline">Get help</a>
+          <a href="#" class="underline">Add your restaurant</a>
+          <a href="#" class="underline">Sign up to deliver</a>
+          <a href="#" class="underline">Create a business account</a>
+        </div>
+      </section>
+    </footer>
+    <!-- copy right section -->
+    <section class="bg-FooterBottomColor">
+      <!-- nav section -->
+      <nav
+        class="max-w-7xl mx-auto flex justify-center lg:justify-between items-center text-white py-7"
+      >
+        <h3 class="text-sm lg:text-base">
+          Order.uk Copyright 2024, All Rights Reserved.
+        </h3>
+        <div class="hidden lg:flex items-center justify-between gap-10">
+          <a href="#" class=""> Privacy Policy </a>
+          <a href="#" class=""> Terms </a>
+
+          <a href="#" class=""> Pricing </a>
+          <a href="#" class="">
+            Do not sell or share my personal information
+          </a>
+        </div>
+      </nav>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
